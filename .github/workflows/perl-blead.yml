@@ -9,7 +9,6 @@ jobs:
   perl:
 
     runs-on: ubuntu-latest
-    container: tibtibdocker/perl-blead
 
     steps:
       - uses: actions/checkout@v2
