@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update \
-    && apt-get -y install wget unzip build-essential
+    && apt-get -y install wget unzip build-essential curl
 
 RUN wget -q https://github.com/Perl/perl5/archive/blead.zip \
     && unzip blead.zip \
