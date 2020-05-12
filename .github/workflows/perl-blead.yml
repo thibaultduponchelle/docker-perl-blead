@@ -1,0 +1,19 @@
+name : perl-blead
+
+on:
+  push:
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  perl:
+
+    runs-on: ubuntu-latest
+    container: tibtibdocker/perl-blead
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: docker build
+        run: docker build -t tibtibdocker/perl-blead . 
+      - name: docker push
+        run: docker push tibtibdocker/perl-blead
