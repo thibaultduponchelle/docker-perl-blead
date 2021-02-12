@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update \
-    && apt-get -y -no-install-recommends install wget unzip build-essential curl
+    && apt-get -y -no-install-recommends install wget unzip build-essential curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
