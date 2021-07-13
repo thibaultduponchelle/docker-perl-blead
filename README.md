@@ -1,4 +1,4 @@
-# A "less than 20 minutes old" perl blead
+# A "less than 6 hours old" perl blead
 
 `docker pull tibtibdocker/perl-blead`
 
